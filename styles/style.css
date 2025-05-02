@@ -108,20 +108,35 @@ button {
   line-height: 105%;
 }
 
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--accent-color);
+}
+
 .header__theme-menu-button_active {
   /*Выбранная по дефолту тема */
   outline: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.4);
 }
 
 /* Хедер: заголовок */
 
 .cover__title {
-  /* TO-DO! Размер шрифта и все такое, через переменные */
-  /* TO-DO! Спросить, откуда эти значения взялись (размер шрифта и тень) */
   color: var(--header-text-color);
   font-size: var(--title-size);
   line-height: 82.5%;
   text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.footer .cover__title {
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .title-decor {
@@ -146,6 +161,23 @@ button {
 /* КОНЕЦ: МЕЙН */
 
 /* СТАТЬЯ */
+a {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+a:hover {
+  border-bottom: 1px solid var(--main-text-color);
+}
+
+.special-link:focus {
+  outline: none;
+}
+
+.special-link:focus-visible {
+  border:  1px solid var(--main-text-color);
+}
+
 
 main,
 .articles {
@@ -316,8 +348,6 @@ main,
   .articles-container {
     margin-left: 0;
   }
-
-
 }
 
 /* КОНЕЦ: АДАПТИВ */
