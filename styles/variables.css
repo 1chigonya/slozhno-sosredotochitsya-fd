@@ -2,3 +2,55 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  /* Переменные основной (тёмной) темы */
+  --main-font: "IBM Plex mono"; /* Мы подключили этот шрифт в файле fonts.css, там же задали ему название и жирность. Поэтому теперь можем его использовать в переменных */
+  --bg-color: #000028;
+  --main-text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --header-text-color: #db00ff;
+  --main-text-size: 18px;
+  --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --cover-image: url(../images/cover-image-dark.png);
+  --page-padding: 10px;
+  --page-gap: 40px;
+  --main-gap: 50px;
+  --question-gap: 20px;
+  --answer-gap: 10px;
+  --pics-gap: 10px;
+}
+
+/*
+Пример variables из урока Ссылка на урок: [Спринт 3/33: 3 Спринт → Тема 4/15: CSS-переменные → Урок 6/6: Тёмная тема на CSS-переменных]( https://practicum.yandex.ru/trainer/frontend-developer/lesson/03a8f635-4097-47fd-a28b-8874f659a518/task/f276d92f-35af-41b2-bcea-4c30d16488e4/ )
+:root {
+  --main-font-family: 'Open Sans';
+  --main-text-size: clamp(0.875rem, 0.7679rem + 0.4762vw, 1.125rem);
+  --bg-color: #f2f2f2;
+  --text-color: #000;
+  --article-bg-color: #6dc1fd;
+  --author-bg-color: #1e1e1e;
+  --author-text-color: #fff;
+  --h2-font-size: clamp(1.875rem, 1.6607rem + 0.9524vw, 2.375rem);
+  --h3-font-size: clamp(1.5rem, 1.3125rem + 0.8333vw, 1.9375rem);
+}
+
+И еще один (Ссылка на урок: [Спринт 3/33: 3 Спринт → Тема 10/15: Подходы к написанию вёрстки → Урок 5/6: Постепенная деградация и Прогрессивное улучшение]( https://practicum.yandex.ru/trainer/frontend-developer/lesson/4928e84b-386d-4c66-b60b-5898a4cc7033/task/022965d9-8878-4700-a97b-22b60709e690/ )
+:root {
+  --main-font: 'PT Sans';
+  --menu-toggle-size: 40px;
+  --section-padding: 20px 10px;
+  --main-font-size: 18px;
+  --menu-background-color: #80d994;
+  --menu-link-hover-background-color: #fff;
+  --hero-bg-image-url: url(../../../images/hero-bg.jpg);
+  --hero-text-color: #fff;
+  --subscribe-form-background-color: #feafe8;
+  --subscribe-form-color: #000;
+  --subscribe-form-button-bg-color: #80d994;
+  --text-container-bg-color: #fff;
+  --text-container-text-color: #000;
+  --icons-list-link-hover-background-color: #80d994;
+  --internal-padding: 40px 20px;
+}
+*/

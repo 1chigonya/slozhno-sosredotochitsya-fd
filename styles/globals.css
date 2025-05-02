@@ -10,6 +10,9 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
+  /* TO-DO! РАЗМЕРЫ ПОСТАВИЛА НА ВРЕМЯ,
+  ПОТОМ КУДА НАДО ПОСТАВЛЮ, ПОКА НЕТ ПЕРЕМЕННЫХ*/
+  font-size: var(--main-text-size);
 }
 
 h1,
@@ -20,6 +23,7 @@ h5,
 h6,
 p {
   margin: 0;
+  font-size: inherit; /
 }
 
 ul {
@@ -39,4 +43,5 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  cursor: pointer;
 }
