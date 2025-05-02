@@ -28,6 +28,9 @@
   .articles__question {
     color: var(--main-text-color);
   }
+  .header__theme-menu-button:hover {
+    outline: 1px solid rgba(53, 52, 48, 0.4);
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -61,6 +64,9 @@
     .articles__question {
       color: var(--main-text-color);
     }
+    .header__theme-menu-button:hover {
+      outline: 1px solid rgba(53, 52, 48, 0.4);
+    }
   }
 }
 :root.theme-light {
@@ -92,5 +98,8 @@
   .title-decor,
   .articles__question {
     color: var(--main-text-color);
+  }
+  .header__theme-menu-button:hover {
+    outline: 1px solid rgba(53, 52, 48, 0.4);
   }
 }
