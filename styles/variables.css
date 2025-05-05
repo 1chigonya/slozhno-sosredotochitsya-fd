@@ -12,7 +12,7 @@
   --header-text-color: #db00ff;
   --main-text-size: 18px;
   --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --cover-image: url(../images/cover-image-dark.png);
+  --cover-image: url(../images/cover-image-dark.png); 
   --page-padding: 10px;
   --page-gap: 40px;
   --main-gap: 50px;

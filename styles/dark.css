@@ -1,0 +1,42 @@
+:root.theme-dark {
+  --main-font: "IBM Plex mono"; /* Мы подключили этот шрифт в файле fonts.css, там же задали ему название и жирность. Поэтому теперь можем его использовать в переменных */
+  --bg-color: #000028;
+  --main-text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --header-text-color: #db00ff;
+  --cover-image: url(../images/cover-image-dark.png);
+
+  .header__decorative-text {
+    display: flex;
+  }
+
+  .title-decor {
+    --bg-color: inherit;
+  }
+
+  .decorated-zone::before {
+    border-inline-end-color: var(--accent-color);
+    border-block-start-color: var(--accent-color);
+  }
+
+  .decorated-zone::after {
+    border-inline-start-color: var(--accent-color);
+    border-block-end-color: var(--accent-color);
+  }
+
+  .header__theme-menu-button_active {
+    outline-color: inherit;
+  }
+
+  .header__theme-menu-button:hover {
+    outline: 1px solid rgba(255, 0, 112, 0.4);
+  }
+
+  .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--accent-color);
+  }
+
+  .articles__question {
+    color: var(--accent-color);
+  }
+}   
