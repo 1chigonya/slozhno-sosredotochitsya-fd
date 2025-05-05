@@ -1,5 +1,4 @@
 :root.theme-dark {
-  --main-font: "IBM Plex mono"; /* Мы подключили этот шрифт в файле fonts.css, там же задали ему название и жирность. Поэтому теперь можем его использовать в переменных */
   --bg-color: #000028;
   --main-text-color: #f1b2ce;
   --accent-color: #ff0070;

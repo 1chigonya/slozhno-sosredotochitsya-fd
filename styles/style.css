@@ -3,7 +3,9 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  background-color: var(--bg-color); /* Резервный фоновый цвет (если картинка не подключится */
+  background-color: var(
+    --bg-color
+  ); /* Резервный фоновый цвет (если картинка не подключится */
   background-image: var(--cover-image); /* Фоновое изображение всей страницы */
   background-position: center; /* Центрирует изображение */
   background-size: cover; /* Растягивает изображение, сохраняя пропорции, чтобы оно покрывало весь элемент */
@@ -14,12 +16,12 @@
   color: var(--main-text-color);
 }
 
-.page-container {
-  display: grid;
-  gap: var(--page-gap);
-}
-
 /* ХЕДЕР */
+
+.header,
+.main {
+  margin-bottom: var(--page-gap);
+}
 
 .header,
 .footer {
