@@ -3,12 +3,13 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-color: var(--bg-color); /* Резервный фоновый цвет (если картинка не подключится */
   background-image: var(--cover-image); /* Фоновое изображение всей страницы */
   background-position: center; /* Центрирует изображение */
   background-size: cover; /* Растягивает изображение, сохраняя пропорции, чтобы оно покрывало весь элемент */
   background-repeat: no-repeat; /* Запрещает повторение картинки */
   background-attachment: fixed; /* Теперь фон остается на месте при прокрутке страницы */
-  font-family: "IBM Plex mono"; /* Шрифт для всей страницы */
+  font-family: "IBM Plex mono", monospace; /* Шрифт для всей страницы */
   line-height: 130%;
   color: var(--main-text-color);
 }
@@ -175,9 +176,8 @@ a:hover {
 }
 
 .special-link:focus-visible {
-  border:  1px solid var(--main-text-color);
+  border: 1px solid var(--main-text-color);
 }
-
 
 main,
 .articles {
@@ -234,6 +234,7 @@ main,
 .footer {
   grid-template-rows: auto;
   align-items: center;
+  justify-content: center;
 }
 
 /* КОНЕЦ: ФУТЕР */
@@ -249,6 +250,7 @@ main,
     --page-gap: 60px;
     --main-gap: 80px;
     --pics-gap: 20px;
+    --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__decorative-text {
@@ -324,17 +326,12 @@ main,
   .footer {
     .cover__title {
       margin: 0;
-      justify-self: center;
     }
   }
 }
 
 @media (min-width: 1024px) {
   /* Десктоп */
-  :root {
-    --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-
   .header__theme-menu {
     align-self: flex-start;
     justify-self: center;
