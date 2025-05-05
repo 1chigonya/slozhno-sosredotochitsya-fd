@@ -179,8 +179,7 @@ a:hover {
   border: 1px solid var(--main-text-color);
 }
 
-main,
-.articles {
+main {
   display: grid;
   gap: var(--main-gap);
 }
@@ -199,11 +198,6 @@ main,
 .articles__answer-container {
   display: flex;
   flex-direction: column;
-  gap: var(--answer-gap);
-}
-
-.articles__advice-container {
-  display: grid;
   gap: var(--answer-gap);
 }
 
