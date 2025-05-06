@@ -35,7 +35,7 @@
     border-bottom: 1px solid var(--main-text-color);
   }
 
-  .articles__question {
+  .articles__question, button {
     color: var(--main-text-color);
   }
 }
@@ -78,7 +78,7 @@
       border-bottom: 1px solid var(--main-text-color);
     }
 
-    .articles__question {
+    .articles__question, button {
       color: var(--main-text-color);
     }
   }
